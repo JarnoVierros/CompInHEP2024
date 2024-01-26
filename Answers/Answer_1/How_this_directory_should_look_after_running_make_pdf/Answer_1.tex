@@ -1,0 +1,62 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+
+\usepackage{feynmf}
+\usepackage{subcaption}
+
+\title{Excercise 1}
+\date{}
+\author{Jarno Vierros}
+
+
+\begin{document}
+
+\maketitle
+
+\begin{fmffile}{ep-annihilation}
+\begin{figure}[h]
+\centering
+\subfloat{
+\parbox{50mm}{
+\begin{fmfgraph*}(100,60)
+  \fmfleft{i2,i1}
+  \fmfright{o2,o1}
+  \fmf{fermion}{i2,v1}
+  \fmf{fermion,tension=0.5}{v1,v2}
+  \fmf{fermion,tension=1.5}{v2,i1}
+  \fmf{photon,tension=0.5}{v1,o2}
+  \fmf{photon}{v2,o1}
+  \fmf{phantom,tension=0.5}{v2,o2}
+     \put(-5,60){\small $e^+$}
+     \put(-5,-5){\small $e^-$}
+     \put(95,60){\small $\gamma$}
+     \put(95,-5){\small $\gamma$}
+\end{fmfgraph*}}
+}
+\subfloat{
+\parbox{50mm}{
+\begin{fmfgraph*}(100,60)
+  \fmfleft{i2,i1}
+  \fmfright{o2,o1}
+  \fmf{fermion,tension=0.8}{i2,v1}
+  \fmf{fermion,tension=0.5}{v1,v2}
+  \fmf{fermion,tension=1.5}{v2,i1}
+  \fmf{photon,tension=0.5}{v1,o2}
+  \fmf{photon}{v2,o1}
+  \fmf{phantom,tension=0.5}{v1,o1}
+     \put(-5,60){\small $e^+$}
+     \put(-5,-5){\small $e^-$}
+     \put(95,60){\small $\gamma$}
+     \put(95,-5){\small $\gamma$}
+\end{fmfgraph*}}
+}
+\caption{Feynman graphs for the lowest order contributions to electron-
+positron annihilation \cite{martin2019nuclear}.}
+\end{figure}
+
+\end{fmffile}
+
+\bibliographystyle{plain}
+\bibliography{refs}
+
+\end{document}
