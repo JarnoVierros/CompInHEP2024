@@ -1,0 +1,8 @@
+{
+    "files.associations": {
+        "Hello_world.C": "cpp",
+        "iostream": "cpp",
+        "ostream": "cpp"
+    },
+    "cmake.configureOnOpen": true
+}
