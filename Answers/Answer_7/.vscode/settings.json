@@ -60,6 +60,8 @@
         "streambuf": "cpp",
         "thread": "cpp",
         "cfenv": "cpp",
-        "typeinfo": "cpp"
+        "typeinfo": "cpp",
+        "four_track_glueball_analysis.C": "cpp",
+        "expoparabola.C": "cpp"
     }
 }
